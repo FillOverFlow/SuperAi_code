@@ -3,7 +3,7 @@
 # get_max_in_list => hand make :)
 
 def get_max_in_list(list_item):
-    maxN = -999999999999999
+    maxN = list_item[0]
     for i in list_item:
         if(i > maxN):
             maxN = i
@@ -13,6 +13,6 @@ def get_max_in_list(list_item):
 
 
 if __name__ == "__main__":
-    some_list = [-11, -2, -3, -4]
+    some_list = [3, -2, -3, -4]
     print(get_max_in_list(some_list))  # use my function
     print(max(some_list))  # use default in python
